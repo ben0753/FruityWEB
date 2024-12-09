@@ -121,7 +121,7 @@ var getSettingsFromForm = function(cb) {
 
     var parts = [
         "https://detect.roboflow.com/",
-        $('#model').val() || "fruits-quality-qtdtf",
+        $('#model').val() || "fruits-quality-devqvb",
         "/",
         $('#version').val() || "1",
         "?api_key=" + ($('#api_key').val() || "l7C0y07Thwda2CyAHThy")
