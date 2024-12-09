@@ -1,3 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Roboflow Inference Example</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.9.6/tailwind.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
 <head>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
@@ -7,18 +17,18 @@
 	<form id="inputForm">
 		<div class="header">
 			<div class="header__grid">
-				<img class="header__logo" src="https://i.ibb.co/nC3MbBy/Fruity-Fy-Official-API.png" alt="Roboflow Inference">
+				<img class="header__logo" src="https://uploads-ssl.webflow.com/5f6bc60e665f54545a1e52a5/6143750f1177056d60fc52d9_roboflow_logomark_inference.png" alt="Roboflow Inference">
 				<div>
 					<label class="header__label" for="model">Model</label>
-					<input class="input" type="text" id="model" value="fruits-quality-qtdtf" />
+					<input class="input" type="text" id="model" />
 				</div>
 				<div>
 					<label class="header__label" for="version">Version</label>
-					<input class="input" type="number" id="version" value="1" />
+					<input class="input" type="number" id="version" />
 				</div>
 				<div>
 					<label class="header__label" for="api_key">API Key</label>
-					<input class="input" type="text" id="api_key" value="l7C0y07Thwda2CyAHThy" />
+					<input class="input" type="text" id="api_key" />
 				</div>
 			</div>
 		</div>
@@ -29,7 +39,7 @@
 					<label class="input__label">Upload Method</label>
 					<div>
 						<button data-value="upload" id="computerButton" class="bttn left fill active">Upload</button>
-						<button data-value="url" id="urlButton" class="bttn right  fill"disabled>URL</button>
+						<button data-value="url" id="urlButton" class="bttn right fill">URL</button>
 					</div>
 				</div>
 
@@ -72,7 +82,7 @@
 				<div class="col-6-m3" id="format">
 					<label class="input__label">Inference Result</label>
 					<div>
-						<button id="imageButton" data-value="image" class="bttn left fill active" disabled>Image</button>
+						<button id="imageButton" data-value="image" class="bttn left fill active">Image</button>
 						<button id="jsonButton" data-value="json" class="bttn right fill">JSON</button>
 					</div>
 				</div>
@@ -109,3 +119,10 @@
 		</div>
 	</form>
 </body>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/async/3.2.0/async.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
